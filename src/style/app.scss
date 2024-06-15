@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --primary-color : #F39C12;
+    --primaryFade-color : #FAD7A0;
+    --primary-ultra-fade-color : #FEF5E7;
+    --text-color : #F8F9F9;
+    --dark : #17202A;
+}
+
+[theme="dark"]{
+    --primary-color : #FAD7A0;
+    --primaryFade-color : #080808;
+    --primary-ultra-fade-color : #FEF5E7;
+    --text-color : #F39C12;
+    --dark : #17202A;
+  }
+
+// ------------------ header ---------------
+
+.header{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 80px;
+    
+    .logo{
+        font-size: 2em;
+        font-weight: 600;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .headerIcon{
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+}
+
+// ------------------- banner ------------
+
+.gradient{
+    background-image: linear-gradient(to right,var(--primaryFade-color),var(--primary-color) , );
+}
+.banner{
+    color : var(--text-color);
+    background-color: var(--dark);
+    button{
+        width: max-content;
+        padding: 10px;
+        border-radius: 2px;
+        border: none;
+        font-weight: 500;
+
+    }
+    .outlined{
+        border: 2px solid var(--primary-color);
+        background-color: transparent;
+    }
+    .contained{
+        background-color:var(--primary-color);
+        color: white;
+
+    }
+  
+}
