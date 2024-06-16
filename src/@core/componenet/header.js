@@ -17,7 +17,7 @@ export default function Header() {
 
     }
     return (
-        <div className="header d-flex flex-row justify-content-around align-items-center">
+        <div className="header d-flex flex-row justify-content-around align-items-center pt-3 pb-3">
             <p className="logo p-0 m-0">Developer</p>
             <div>
 
