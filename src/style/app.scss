@@ -1,87 +1,139 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-//// yellow
-// :root{
-//  --primaryColor : #F4D03F;
-//  --backgroundColor: #FCF3CF;
-//  --textColor : #000000;
-//  --subTextColor :#17202A;
-//  --iconColor : #FCF3CF;
-// }
 
-// green
-// :root{
-//  --primaryColor : #1ABC9C;
-//  --backgroundColor: #white;
-//  --textColor : #000000;
-//  --subTextColor :#17202A;
-//  --iconColor : #D1F2EB;
-// }
 
-// purple 
-// :root{
-//  --primaryColor : #9B59B6;
-//  --backgroundColor:#F5EEF8;
-//  --textColor : #000000;
-//  --subTextColor :#17202A;
-//  --iconColor : #F5EEF8;
-// }
-
-// dark
 :root{
- --primaryColor : #34495E ;
- --backgroundColor:#D6DBDF;
- --textColor : #000000;
- --subTextColor :#17202A;
- --iconColor :#D6DBDF;
+    --primaryColor: #F39C12;
+    --backgroundColor: #ffffff;
+    --textColor: #000000;
+    --subTextColor: #ffffff;
+    --iconColor: #FEF5E7;
 }
-// red
-// :root{
-//  --primaryColor : #E74C3C;
-//  --backgroundColor:#FADBD8;
-//  --textColor : #000000;
-//  --subTextColor :#17202A;
-//  --iconColor :#FADBD8;
-// }
 
+[color="success"] {
+    --primaryColor: #00ffbf;
+    --backgroundColor: #ffffff;
+    --textColor: #000000;
+    --subTextColor: #ffffff;
+    --iconColor: #ffffff;
+}
 
-// gray 
-// :root{
-//  --primaryColor : #797D7F;
-//  --backgroundColor: #F4F6F6;
-//  --textColor : #000000;
-//  --subTextColor :#17202A;
-//  --iconColor : #F4F6F6;
-// }
-
-// -------------------orange color 
-// :root{
-//  --primaryColor : #F39C12;
-//  --backgroundColor: #FEF5E7;
-//  --textColor : #000000;
-//  --subTextColor :#17202A;
-//  --iconColor : #FEF5E7;
-// }
-
-
-
-[theme="dark"]{
-    --primaryColor : #F39C12;
+[color="success"][theme="dark"] {
+    --primaryColor:#00ffbf;
     --backgroundColor: #060707;
-    --textColor : #ffffff;
-    --subTextColor :#e3e3e3;
-    --iconColor : #FEF5E7;
-    
-  }
+    --textColor: #ffffff;
+    --subTextColor: #ffffff;
+    --iconColor: #FEF5E7;
+}
+[color="info"] {
+    --primaryColor: #1700c1;
+    --backgroundColor: #ffffff;
+    --textColor: #000000;
+    --subTextColor: #ffffff;
+    --iconColor: #ffffff;
+}
+
+[color="info"][theme="dark"] {
+    --primaryColor:	#1700c1;
+    --backgroundColor: #060707;
+    --textColor: #ffffff;
+    --subTextColor: #ffffff;
+    --iconColor: #FEF5E7;
+}
+[color="primary"] {
+    --primaryColor: #F39C12;
+    --backgroundColor: #ffffff;
+    --textColor: #000000;
+    --subTextColor: #ffffff;
+    --iconColor: #FEF5E7;
+}
+
+[color="primary"][theme="dark"] {
+    --primaryColor: #F39C12;
+    --backgroundColor: #060707;
+    --textColor: #ffffff;
+    --subTextColor: #ffffff;
+    --iconColor: #FEF5E7;
+}
+
+
+[color="warning"] {
+    --primaryColor: #ffef00;
+    --backgroundColor: #ffffff;
+    --textColor: #000000;
+    --subTextColor: #010101;
+    --iconColor: #010101;
+}
+
+[color="warning"][theme="dark"] {
+    --primaryColor: #ffef00;
+    --backgroundColor: #060707;
+    --textColor: #ffffff;
+    --subTextColor: #010101;
+    --iconColor: #010101;
+}
+
+[color="error"] {
+        --primaryColor: #627282;
+        --backgroundColor: #ffffff;
+        --textColor: #000000;
+        --subTextColor: #ffffff;
+        --iconColor: #ffffff;
+}
+
+[color="error"][theme="dark"] {
+            --primaryColor: #627282;
+            --backgroundColor: #060707;
+            --textColor: #ffffff;
+            --subTextColor: #ffffff;
+            --iconColor: #ffffff;
+}
+[color="purple"] {
+        --primaryColor: #7135ae;
+        --backgroundColor: #ffffff;
+        --textColor: #000000;
+        --subTextColor: #ffffff;
+        --iconColor: #ffffff;
+}
+
+[color="purple"][theme="dark"] {
+            --primaryColor: #7135ae;
+            --backgroundColor: #060707;
+            --textColor: #ffffff;
+            --subTextColor: #ffffff;
+            --iconColor: #ffffff;
+}
+[color="red"] {
+        --primaryColor: #ff2300;
+        --backgroundColor: #ffffff;
+        --textColor: #000000;
+        --subTextColor: #ffffff;
+        --iconColor: #ffffff;
+}
+
+[color="red"][theme="dark"] {
+            --primaryColor: #ff2300;
+            --backgroundColor: #060707;
+            --textColor: #ffffff;
+            --subTextColor: #ffffff;
+            --iconColor: #ffffff;
+}
 
 
 
 
 
-  body{
+
+
+
+
+
+
+
+body {
     background-color: var(--backgroundColor);
     color: var(--primaryColor);
     box-sizing: border-box;
@@ -89,12 +141,12 @@
     margin: 0;
 }
 
-.componenetHeading{
+.componenetHeading {
     color: var(--textColor);
     font-size: 2em;
 }
 
-.description{
+.description {
     color: var(--textColor);
     font-size: 1.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -102,32 +154,36 @@
 }
 
 
-.divider{
+.divider {
     color: var(--primaryColor);
-    border-top:2px solid var(--primaryColor) ;
+    border-top: 2px solid var(--primaryColor);
 }
 
 // ------------------------ header ---------------------
-.header{
+.header {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     font-size: 1.5rem;
-    .logo{
+
+    .logo {
         font-size: 2rem;
     }
-    .headerIcon{
+
+    .headerIcon {
         cursor: pointer;
     }
 }
 
 // ------------------------banner -----------------------
-.banner{
-    .headingBox{
+.banner {
+    .headingBox {
         max-width: 500px;
     }
-    p{
+
+    p {
         font-weight: 500;
     }
-    button{
+
+    button {
         padding: 10px 20px;
         border: none;
         font-size: 1rem;
@@ -135,25 +191,30 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         min-width: 180px;
     }
-    .contained{
+
+    .contained {
         background-color: var(--primaryColor);
         color: var(--textColor);
         border: 2px solid var(--primaryColor);
+        color: var(--subTextColor);
     }
-    .outlined{
+
+    .outlined {
         border: 2px solid var(--primaryColor);
         background-color: transparent;
         color: var(--textColor);
         box-sizing: border-box;
     }
-    .image{
+
+    .image {
         width: 300px;
         height: 300px;
     }
 }
+
 // ------------------------------skills -----------------------
-.skills{
-    .circuluarContainer{
+.skills {
+    .circuluarContainer {
         font-size: 4rem;
         background-color: var(--primaryColor);
         color: var(--iconColor);
@@ -164,39 +225,41 @@
         align-items: center;
         border-radius: 50%;
     }
-  
+
 }
 
 
 // --------------------------project --------------------------
 
-.projectCard{
+.projectCard {
     padding-bottom: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     color: var(--textColor);
     max-width: 300px;
     border-radius: 8px;
-   border: 2px solid var(--primaryColor);
-   overflow: hidden;
-    .iconParent{
+    border: 2px solid var(--primaryColor);
+    overflow: hidden;
+
+    .iconParent {
         border-radius: 2px;
         min-height: 100px;
         background-color: var(--primaryColor);
         font-size: 5rem;
         color: var(--iconColor);
-    
+
     }
-    .projectName{
-        font-size: 1.1rem ;
+
+    .projectName {
+        font-size: 1.1rem;
         font-weight: 500;
     }
 
-    .projectDescription{
+    .projectDescription {
         font-size: .9rem;
         font-weight: 500;
     }
 
-    button{
+    button {
         padding: 5px 15px;
         border: none;
         font-size: 1rem;
@@ -205,12 +268,15 @@
         min-width: max-content;
         border-radius: 10px;
     }
-    .contained{
+
+    .contained {
         background-color: var(--primaryColor);
         color: var(--textColor);
         border: 2px solid var(--primaryColor);
+        color: var(--subTextColor);
     }
-    .outlined{
+
+    .outlined {
         border: 2px solid var(--primaryColor);
         background-color: transparent;
         color: var(--textColor);
@@ -220,11 +286,48 @@
 
 
 // -------------------------footer ---------------------------
-.footer{
+.footer {
     color: var(--textColor);
-    .headingFooter{
+
+    .headingFooter {
         color: var(--primaryColor);
         font-weight: 500;
     }
 
+}
+
+
+// --------------------------- color selector ----------------------------
+
+
+.color-selector {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.gary {
+    background-color: #627282;
+}
+
+.orange {
+    background-color: #F39C12;
+}
+
+.yellow {
+    background-color: #ffef00;
+}
+.info {
+    background-color: #74abf1;
+}
+.success {
+    background-color: #00ffbf;
+}
+.purple {
+    background-color: #7135ae;
+}
+.red {
+    background-color: #ff2300;
 }

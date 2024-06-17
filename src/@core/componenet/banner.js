@@ -1,7 +1,11 @@
+'use client'
 import Image from "next/image";
 import introImage from '../../assets/images/intro.png'
 
+
 export default function Banner() {
+
+
     return (
         <div className=" banner  d-flex justify-content-around align-items-center flex-wrap-reverse p-3 py-5">
             <div className="d-flex flex-column headingBox">
@@ -24,7 +28,7 @@ export default function Banner() {
 
             </div>
             <div >
-                <Image src={introImage} alt='Not found'  className="img-fluid image"></Image>
+                <Image src={introImage} alt='Not found' className="img-fluid image"></Image>
 
             </div>
 
