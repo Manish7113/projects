@@ -13,6 +13,8 @@ export default function SideBar() {
 
 
     const handleSelectTheme = (type) =>{
+        
+        handleClose()
         document.querySelector('body').setAttribute('color', type)
         localStorage.setItem('color' , type)
         setTheme(type)
